@@ -14,8 +14,8 @@ import {
 
 // import Rooter from '../app/Rooter';
 import TopTitle from './app/component/TopTitle';
+import Demo from './app/component/Demo'
 
-console.log(1);
 class MyNative extends Component{
   render(){
     return(<TopTitle></TopTitle>)
