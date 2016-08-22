@@ -12,14 +12,14 @@ import {
   View,
 } from 'react-native';
 
-// import Rooter from '../app/Rooter';
-import TopTitle from './app/component/TopTitle';
-import Demo from './app/component/Demo'
+import MyActivityIndicator from './app/systemcomponent/MyActivityIndicator/MyActivityIndicator';
+import MyTimerMixin from './app/myapi/MyTimerMixin';
+
 
 class MyNative extends Component{
   render(){
-    return(<TopTitle></TopTitle>)
+    return(<Demo></Demo>)
   }
 }
 
-AppRegistry.registerComponent('MyNative', () => MyNative);
+AppRegistry.registerComponent('MyNative', () => MyTimerMixin);

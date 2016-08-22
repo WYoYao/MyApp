@@ -1,7 +1,9 @@
 import React, {Component,PropTypes} from 'react';
-import {View,StyleSheet,Image,Text} from 'react-native';
+import {View,StyleSheet,Image,Text,Platform,StatusBar} from 'react-native';
 
+let propTypes={...View.propTypes};
 
+console.log(propTypes);
 
 export default class Demo extends Component{
     constructor(props){
@@ -26,29 +28,12 @@ export default class Demo extends Component{
     render(){
         return (
             <View style={{
-                width:500,
-                height:500,
-                backgroundColor:'red',
-                justifyContent:'flex-start',
-                flexWrap:'wrap',
+                flex:1,
+                backgroundColor:'#ffffff',
+                justifyContent:'center',
+                alignItems:'center',
             }}>
-                <View style={
-                    [{
-                    width:100,
-                    height:500,
-                    backgroundColor:'green',
-                    // alignSelf:'flex-start',
-                }]
-                }></View>
-                <View style={
-                    [{
-                    width:300,
-                    height:500,
-                    backgroundColor:'green',
-                    // alignSelf:'center',
-                }]
-                }></View>
-
+                <StatusBar></StatusBar>
             </View>
         )
     }
